@@ -1,0 +1,16 @@
+{
+  "name": "Bookstore",
+  "version": "0.0.0",
+  "description": "Tienda de libros",
+  "main": "app.js",
+  "dependencies":{
+	"express":"*",
+	"mongoose":"*",
+	"body-parser":"*"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Alexander Matos",
+  "license": "BSD-2-Clause"
+}
