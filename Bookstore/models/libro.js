@@ -6,10 +6,6 @@ var libroSchema = mongoose.Schema({
     type: String,
     required: true
   },
-  nombre:{
-    type: String,
-    required: true
-  },
   genero:{
     type: String,
     required: true
@@ -28,6 +24,13 @@ var libroSchema = mongoose.Schema({
 var Libro = module.exports = mongoose.model('Libro', libroSchema);
 
 //Metodos de acceso
+
+//Buscar todos los libros
 module.exports.getLibros = function(callback, limit){
-  Libro.find(callback).limit(limit); //Como si estubiesemos en mongodb
+  Libro.find(callback).limit(limit);
+}
+
+//Buscar solo un libro
+module.exports.getLibroPorId = function(id, callback){
+  Libro.findById(id, callback);
 }
