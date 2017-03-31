@@ -1,0 +1,13 @@
+Las interfaces pueden servir para segregar funcionalidades que si incorporamos como parte de una clase abstracta los hijos quizas no necesiten.  Esta el ejemplo de un simulador de patos, no todos los patos vuelan, o hacen ruido.:
+
+Para este caso tendriamos dos interfaces:
+- Volador con un metodo Volar()
+- Quackable con un metodo Quack()
+
+Pero ese esquema conllevaria a que cada implementacion de la interfaz complicaria el mantenimiento
+
+Un buen principio de programacion DRY es sacar el codigo que cambia del que no
+
+En otras palabras, sacar de la clase su comportamiento
+
+Hay que programar siempre hacia una superclase "Always program to a super type"
